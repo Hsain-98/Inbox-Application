@@ -7,13 +7,15 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
+import org.springframework.stereotype.Component;
 
 //Controlling the authentication mechanism
-@Configuration
+//@Configuration
+@Component
 public class SecurityAdapter{
 	
 	//Authentication configuration
-	@Bean
+	//@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
 		// @formatter:off
 		http
